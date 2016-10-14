@@ -159,7 +159,7 @@ class Gdal < Formula
       supported_backends.delete "liblzma"
       args << "--with-liblzma=yes"
       supported_backends.delete "pdfium"
-      args << "--with-pdfium=yes"
+      # args << "--with-pdfium=yes"  # This was causing gdal configure to fail, not finding pdfium
       args.concat supported_backends.map { |b| "--with-" + b + "=" + HOMEBREW_PREFIX }
     elsif build.without? "unsupported"
       args.concat supported_backends.map { |b| "--without-" + b }
