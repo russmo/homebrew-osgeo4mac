@@ -74,6 +74,7 @@ class Gdal < Formula
     depends_on "poppler"
     depends_on "podofo"
     depends_on "json-c"
+    depends_on "pcre"
   end
 
   depends_on :java => ["1.7+", :optional, :build]
@@ -154,6 +155,7 @@ class Gdal < Formula
       openjpeg
       podofo
       pdfium
+      pcre
     ]
     if build.with? "complete"
       supported_backends.delete "liblzma"
