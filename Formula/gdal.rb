@@ -9,7 +9,8 @@ class Gdal < Formula
   # end
 
   head do
-    url "https://svn.osgeo.org/gdal/trunk/gdal"
+    # url "https://svn.osgeo.org/gdal/trunk/gdal"
+    url "https://svn.osgeo.org/gdal/branches/2.1/gdal"
     depends_on "doxygen" => :build
   end
 
